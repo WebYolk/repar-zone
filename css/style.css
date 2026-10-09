@@ -1,0 +1,194 @@
+/* --- VARIABLES GLOBALES - REPAR ZONE (Azul Tecnológico) --- */
+:root {
+    --primary-color: #0056b3; /* Azul Rey/Institucional */
+    --primary-hover: #003d82; /* Azul oscuro */
+    --secondary-color: #00b4d8; /* Celeste/Cyan Brillante */
+    --text-dark: #1e293b;
+    --text-light: #475569;
+    --bg-light: #f8fafc;
+    --bg-white: #ffffff;
+    --bg-dark: #0a192f; /* Azul Marino muy oscuro (Tecnológico) */
+    --bg-darker: #020c1b;
+    --btn-text: #ffffff;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+html { scroll-behavior: smooth; }
+body { color: var(--text-dark); line-height: 1.6; background-color: var(--bg-white); }
+
+/* UTILIDADES */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 80px 0; }
+.bg-light { background-color: var(--bg-light); }
+.bg-dark { background-color: var(--bg-dark); }
+.text-white { color: white !important; }
+.text-primary { color: var(--secondary-color) !important; } /* Texto destacado en cyan */
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.section-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; color: var(--bg-dark); text-transform: uppercase; letter-spacing: 1px;}
+.section-subtitle { color: var(--text-light); font-size: 1.1rem; margin-bottom: 40px; }
+.title-underline { width: 80px; height: 5px; background-color: var(--primary-color); margin-bottom: 30px; border-radius: 3px; }
+
+/* BOTONES */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: var(--transition); cursor: pointer; border: 2px solid transparent; text-transform: uppercase; letter-spacing: 0.5px;}
+.btn-primary { background-color: var(--primary-color); color: var(--btn-text); }
+.btn-primary:hover { background-color: var(--secondary-color); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 180, 216, 0.4); }
+.btn-outline { background-color: transparent; border-color: var(--secondary-color); color: var(--secondary-color); }
+.btn-outline:hover { background-color: var(--secondary-color); color: var(--bg-darker); transform: translateY(-3px); }
+.btn-large { padding: 15px 40px; font-size: 1.1rem; }
+
+/* NAVEGACIÓN */
+.navbar { position: fixed; top: 0; width: 100%; z-index: 1000; transition: var(--transition); background-color: transparent; padding: 15px 0; }
+.navbar.scrolled { background-color: var(--bg-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.6); padding: 10px 0; border-bottom: 2px solid var(--primary-color);}
+.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* LOGO */
+.logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-logo { height: 60px; object-fit: contain; } /* Logo REPAR ZONE es alargado */
+
+.nav-links { list-style: none; display: flex; gap: 25px; align-items: center; }
+.nav-link { color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition); text-transform: uppercase;}
+.nav-link:hover { color: var(--secondary-color); }
+.hamburger { display: none; color: white; font-size: 1.8rem; cursor: pointer; }
+
+/* HERO SECTION - Foto Cloudinary */
+.hero { height: 100vh; background-color: var(--bg-dark); background-image: url('https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto-portada.jpg'); background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(2, 12, 27, 0.95), rgba(2, 12, 27, 0.7)); }
+.hero-content { position: relative; z-index: 1; color: white; max-width: 900px; padding: 0 20px; }
+.badge-hero { display: inline-block; background: var(--primary-color); color: white; padding: 8px 20px; border-radius: 50px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; font-size: 0.9rem;}
+.hero-content h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; font-weight: 800; min-height: 120px; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 35px; opacity: 0.9; }
+.hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+/* FRANJA DE CONFIANZA */
+.trust-banner { background-color: var(--primary-color); padding: 30px 0; border-bottom: 5px solid var(--secondary-color); }
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; }
+.trust-item { padding: 10px; }
+.trust-item i { font-size: 2.5rem; color: white; margin-bottom: 10px; }
+.trust-item h4 { color: white; font-size: 1rem; font-weight: 600; text-transform: uppercase; }
+
+/* SECCIÓN NOSOTROS (Caja de Misión) */
+.mission-box { background: white; padding: 50px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 6px solid var(--secondary-color); position: relative;}
+.mission-icon { font-size: 3rem; color: var(--primary-color); margin-bottom: 20px; }
+.mission-box h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--bg-dark); }
+.mission-box p { font-size: 1.1rem; color: var(--text-light); line-height: 1.8; }
+
+/* SECCIÓN SERVICIOS - TARJETAS FLIP (INTERACTIVAS) */
+.services-flip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-bottom: 40px; perspective: 1000px;}
+
+.flip-card { background-color: transparent; width: 100%; height: 260px; perspective: 1000px; cursor: pointer; }
+.flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+
+/* Frentes y Dorsos de Tarjeta */
+.flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
+
+.flip-card-front { background-color: white; border: 2px solid #e2e8f0; }
+.flip-card-front i { font-size: 3.5rem; color: var(--primary-color); margin-bottom: 20px; transition: var(--transition);}
+.flip-card-front h3 { color: var(--bg-dark); font-size: 1.2rem; font-weight: 700;}
+.flip-card:hover .flip-card-front i { color: var(--secondary-color); transform: scale(1.1);}
+
+.flip-card-back { background-color: var(--primary-color); color: white; transform: rotateY(180deg); border: 2px solid var(--secondary-color); }
+.flip-card-back h3 { margin-bottom: 15px; font-size: 1.2rem; border-bottom: 2px solid var(--secondary-color); padding-bottom: 5px;}
+.flip-card-back p { font-size: 0.95rem; font-weight: 400; line-height: 1.5; opacity: 0.95;}
+
+/* SECCIÓN PROMOCIÓN - Fondo con filtro oscuro */
+.promo-section { background-image: url('https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto-portada.jpg'); background-size: cover; background-position: center; background-attachment: fixed; position: relative; padding: 120px 0; }
+.promo-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(10, 25, 47, 0.95) 0%, rgba(0, 86, 179, 0.85) 100%); }
+.relative { position: relative; }
+.z-10 { z-index: 10; }
+.promo-badge { display: inline-block; background: var(--secondary-color); color: var(--bg-darker); padding: 5px 15px; font-weight: 800; font-size: 1.2rem; border-radius: 5px; margin-bottom: 20px; transform: rotate(-3deg);}
+
+/* CARRUSEL DE IMÁGENES */
+.carousel-container { position: relative; max-width: 900px; margin: 0 auto; border-radius: 15px; border: 4px solid var(--primary-color); overflow: hidden; background: var(--bg-dark); box-shadow: 0 15px 30px rgba(0,0,0,0.15);}
+.carousel-slide { position: relative; width: 100%; height: 500px; display: flex; align-items: center; justify-content: center; }
+.carousel-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.5s ease-in-out; }
+.carousel-img.active { opacity: 1; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 86, 179, 0.8); color: white; border: none; font-size: 1.8rem; padding: 15px 20px; cursor: pointer; z-index: 10; border-radius: 5px; transition: var(--transition); }
+.carousel-btn:hover { background: var(--secondary-color); color: var(--bg-darker); }
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+/* CONTACTO (REPAR ZONE) */
+.contact-layout-repar { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+
+.contact-card-link-repar, .contact-card-static-repar { 
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 35px 20px; 
+    border-radius: 15px; 
+    text-align: center; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    text-decoration: none; 
+    color: white;
+    transition: var(--transition);
+    display: block;
+}
+
+.contact-card-link-repar:hover {
+    background: var(--primary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 180, 216, 0.2);
+}
+
+.contact-card-link-repar i, .contact-card-static-repar i.fas { font-size: 2.8rem; color: var(--secondary-color); margin-bottom: 15px; transition: var(--transition); }
+.contact-card-link-repar h3, .contact-card-static-repar h3 { margin-bottom: 10px; font-size: 1.3rem; }
+.contact-detail { display: block; font-size: 1.1rem; font-weight: 300; opacity: 0.9;}
+
+.contact-card-link-repar:hover i.fab { color: white; }
+
+/* REDES SOCIALES LINKS */
+.social-icon-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition);
+}
+.social-icon-link i {
+    font-size: 3rem !important; 
+    color: var(--secondary-color) !important;
+    margin-bottom: 10px !important;
+    transition: var(--transition);
+}
+.social-icon-link span {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+.social-icon-link:hover {
+    transform: translateY(-5px);
+}
+.social-icon-link:hover i, .social-icon-link:hover span {
+    color: var(--primary-color) !important; 
+}
+
+/* FOOTER Y WHATSAPP */
+.footer { text-align: center; padding: 25px; background: var(--bg-darker); color: #94a3b8; font-size: 0.9rem;}
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; z-index: 999; text-decoration: none; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: var(--transition); }
+.whatsapp-float:hover { transform: scale(1.15) rotate(-5deg); }
+
+/* ANIMACIONES FADE-IN */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 992px) {
+    .hero-content h1 { font-size: 2.8rem; min-height: 80px; }
+}
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    .nav-links { position: absolute; top: 100%; left: -100%; width: 100%; background: var(--bg-dark); flex-direction: column; text-align: center; padding: 20px 0; gap: 20px; transition: var(--transition); border-bottom: 3px solid var(--secondary-color);}
+    .nav-links.active { left: 0; }
+    .navbar { background: var(--bg-dark); padding: 10px 0; }
+    .nav-logo { height: 45px; }
+    .hero-content h1 { font-size: 2.2rem; }
+    .hero-btns { flex-direction: column; }
+    .btn { width: 100%; }
+    .carousel-slide { height: 350px; }
+    .mission-box { padding: 30px 20px; }
+}

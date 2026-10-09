@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPAR ZONE | Servicio Técnico en Línea Blanca</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo desde Cloudinary -->
+            <a href="#" class="logo-container">
+                <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rplogo.jpg" alt="Logo Repar Zone" class="nav-logo">
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#promocion" class="nav-link">Promoción</a></li>
+                <li><a href="#proyectos" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <div class="badge-hero">Tu línea blanca en buenas manos</div>
+            <h1>Especialistas en <br>
+                <span class="typewrite text-primary" data-period="2000" data-type='[ "Lavadoras y Secadoras.", "Refrigeradoras.", "Calefones.", "Cocinas a gas e inducción.", "Aires Acondicionados." ]'>
+                    <span class="wrap"></span>
+                </span>
+            </h1>
+            <p>Reparaciones rápidas y efectivas en tu domicilio. Llegamos donde estés: Norte, Sur y Valles de Quito.</p>
+            <div class="hero-btns">
+                <a href="#servicios" class="btn btn-primary"><i class="fas fa-cogs"></i> Ver Servicios</a>
+                <a href="https://wa.me/593998292854?text=Hola,%20necesito%20servicio%20técnico%20para%20un%20electrodoméstico." target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Cotiza Ya!</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FRANJA DE CONFIANZA -->
+    <section class="trust-banner">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Servicio 100% Garantizado</h4>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-user-cog"></i>
+                <h4>Técnicos Capacitados</h4>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-tools"></i>
+                <h4>Repuestos Originales</h4>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-stopwatch"></i>
+                <h4>Atención Rápida y Segura</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="section bg-light">
+        <div class="container text-center fade-in" style="max-width: 900px;">
+            <h2 class="section-title">Tu Confianza, Nuestro Compromiso</h2>
+            <div class="title-underline mx-auto"></div>
+            
+            <div class="mission-box">
+                <i class="fas fa-tools mission-icon"></i>
+                <h3>Nuestro Objetivo</h3>
+                <p>Proporcionar un servicio eficiente, rápido y cada vez de mayor calidad acorde a las necesidades de cada uno de nuestros clientes, todo esto en procura de su satisfacción total. ¡Tus electrodomésticos en las mejores manos!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS (TARJETAS INTERACTIVAS FLIP) -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Servicio Técnico Especializado</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle">Pasa el cursor o toca cada tarjeta para conocer más de nuestro servicio.</p>
+            </div>
+
+            <div class="services-flip-grid fade-in">
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-tshirt"></i>
+                            <h3>Lavadoras</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Lavadoras</h3>
+                            <p>Reparación y mantenimiento integral de todas las marcas. Solucionamos problemas de centrifugado, filtraciones y tarjetas electrónicas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-wind"></i>
+                            <h3>Secadoras</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Secadoras</h3>
+                            <p>Mantenimiento profundo y solución a fallas de calentamiento, bandas rotas o ruidos extraños.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-snowflake"></i>
+                            <h3>Refrigeradoras</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Refrigeradoras</h3>
+                            <p>Recargas de gas, reparación de compresores, termostatos y solución a problemas de enfriamiento o escarcha.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-fire-alt"></i>
+                            <h3>Calefones</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Calefones</h3>
+                            <p>Mantenimiento preventivo, limpieza de inyectores, cambio de membranas y sensores para tu seguridad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-fire"></i>
+                            <h3>Cocinas</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Cocinas</h3>
+                            <p>Reparación de cocinas a gas e inducción. Arreglo de chisperos, hornillas tapadas y sistemas eléctricos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-pizza-slice"></i>
+                            <h3>Hornos</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Hornos</h3>
+                            <p>Servicio técnico para hornos eléctricos y a gas. Solución a fallos de temperatura y resistencias.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-fan"></i>
+                            <h3>Aires Acondicionados</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Aires Acondicionados</h3>
+                            <p>Limpieza de filtros, recargas de refrigerante y mantenimiento para mantener tu clima ideal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-smog"></i>
+                            <h3>Extractores de Olor</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Extractores</h3>
+                            <p>Limpieza profunda de grasa, reparación de motores y cambios de filtros de carbón.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-wave-square"></i>
+                            <h3>Microondas</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Microondas</h3>
+                            <p>Cambio de magnetrones, reparación de teclados, platos que no giran y fallas de encendido.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-sink"></i>
+                            <h3>Lavaplatos</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Lavaplatos</h3>
+                            <p>Solución a fugas de agua, fallos en las bombas de desagüe y ciclos de lavado incompletos.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROMOCIÓN -->
+    <section id="promocion" class="section promo-section text-center text-white fade-in">
+        <div class="promo-overlay"></div>
+        <div class="container relative z-10">
+            <div class="promo-badge">¡PROMO ESPECIAL!</div>
+            <h2 style="font-size: 3.5rem; font-weight: 800; margin-bottom: 10px; color: #38bdf8;">15% DE DESCUENTO</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 30px; font-weight: 500;">En tu reparación de línea blanca</p>
+            
+            <a href="https://wa.me/593998292854?text=Hola,%20vengo%20de%20la%20página%20web%20y%20quiero%20aprovechar%20el%2015%25%20de%20descuento%20en%20reparación." target="_blank" class="btn btn-primary btn-large">
+                <i class="fab fa-whatsapp"></i> Reclamar Descuento
+            </a>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE IMÁGENES (24 FOTOS CLOUDINARY) -->
+    <section id="proyectos" class="section bg-light">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Trabajos Realizados</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle">Calidad que se ve, servicio que se siente.</p>
+            </div>
+            
+            <div class="carousel-container fade-in">
+                <button class="carousel-btn prev" id="btn-prev"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="carousel-slide">
+                    <!-- 24 IMÁGENES DESDE CLOUDINARY -->
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto1.jpg" alt="Servicio 1" class="carousel-img active">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto2.jpg" alt="Servicio 2" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto3.jpg" alt="Servicio 3" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto4.jpg" alt="Servicio 4" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto5.jpg" alt="Servicio 5" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto6.jpg" alt="Servicio 6" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto7.jpg" alt="Servicio 7" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto8.jpg" alt="Servicio 8" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto9.jpg" alt="Servicio 9" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto10.jpg" alt="Servicio 10" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto11.jpg" alt="Servicio 11" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto12.jpg" alt="Servicio 12" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto13.jpg" alt="Servicio 13" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto14.jpg" alt="Servicio 14" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto15.jpg" alt="Servicio 15" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto16.jpg" alt="Servicio 16" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto17.jpg" alt="Servicio 17" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto18.jpg" alt="Servicio 18" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto19.jpg" alt="Servicio 19" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto20.jpg" alt="Servicio 20" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto21.jpg" alt="Servicio 21" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto22.jpg" alt="Servicio 22" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto23.jpg" alt="Servicio 23" class="carousel-img">
+                    <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791506281/rpfoto24.jpg" alt="Servicio 24" class="carousel-img">
+                </div>
+
+                <button class="carousel-btn next" id="btn-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section bg-dark text-white">
+        <div class="container fade-in">
+            <div class="text-center mb-5" style="margin-bottom: 50px;">
+                <h2 class="section-title text-white">¡Somos tu mejor solución!</h2>
+                <div class="title-underline mx-auto" style="background-color: var(--secondary-color);"></div>
+                <p class="section-subtitle text-white" style="opacity: 0.8;">Contáctanos hoy y agenda tu visita técnica a domicilio.</p>
+            </div>
+
+            <div class="contact-layout-repar">
+                
+                <!-- 1. WhatsApp -->
+                <a href="https://wa.me/593998292854" target="_blank" class="contact-card-link-repar">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Contacto Directo</h3>
+                    <span class="contact-detail">099 829 2854</span>
+                </a>
+
+                <!-- 2. REDES SOCIALES (NUEVA TARJETA) -->
+                <div class="contact-card-static-repar" style="padding-top: 25px;">
+                    <h3 style="margin-bottom: 25px;">Nuestras Redes</h3>
+                    <div style="display: flex; justify-content: center; gap: 30px;">
+                        <a href="https://www.facebook.com/profile.php?id=61558460421887" target="_blank" class="social-icon-link">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/repar_zone/" target="_blank" class="social-icon-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 3. Ubicación -->
+                <div class="contact-card-static-repar">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Servicio a Domicilio</h3>
+                    <span class="contact-detail">Quito y Alrededores<br>(Norte, Sur, Valles)</span>
+                </div>
+                
+                <!-- 4. Técnico -->
+                <div class="contact-card-static-repar">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Técnico Especializado</h3>
+                    <span class="contact-detail">Flores Tipan Erik Rubén</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 REPAR ZONE. Todos los derechos reservados. Desarrollado por WebYolk</p>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/593998292854" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPT JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
